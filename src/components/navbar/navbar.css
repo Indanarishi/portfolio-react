@@ -115,6 +115,10 @@
         position: absolute;
         top: 0;
         left: 0;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
     }
     .navbar .navbar-hamburger #open-btn img,
     .navbar .navbar-hamburger #close-btn img {
