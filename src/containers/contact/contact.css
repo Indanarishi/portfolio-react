@@ -1,0 +1,222 @@
+.contact {
+    width: 100%;
+    max-height: 1000px;
+    height: 800px;
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.contact .container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .contact-title {
+    width: 65%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-30%);
+    font-size: 10rem;
+    text-transform: lowercase;
+    color: rgba(0,0,0,0.4);
+}
+
+.contact .contact-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .contact-top a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgba(0,0,0,0.4);
+    transition: .3s all ease-in-out;
+}
+
+.contact .contact-top a:hover {
+    color: #000;
+}
+
+.contact .contact-top-left a:not(:first-child) {
+    margin-left: 25px;
+}
+
+.contact .contact-top-right a:not(:last-child) {
+    margin-right: 25px;
+}
+
+.contact .contact-mid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .contact-mid h3 {
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+.contact .contact-bot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 27%;
+}
+
+.contact .contact-bot p {
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.4);
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        margin-top: 50px;
+        padding: 50px 0;
+        height: 700px;
+    }
+    .contact .contact-title {
+        width: 60%;
+        font-size: 6.5rem;
+        text-align: center;
+    }
+    .contact .contact-top a {
+        font-size: 1.3rem;
+    }
+    .contact .contact-top-left a:not(:first-child) {
+        margin-left: 20px;
+    }
+    .contact .contact-top-right a:not(:last-child) {
+        margin-right: 20px;
+    }
+    .contact .contact-mid h3 {
+        font-size: 2.8rem;
+    }
+    .contact .contact-bot {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        height: 600px;
+    }
+    .contact .contact-title {
+        font-size: 5rem;
+    }
+    .contact .contact-top a {
+        font-size: 1.1rem;
+    }
+    .contact .contact-top-left a:not(:first-child) {
+        margin-left: 10px;
+    }
+    .contact .contact-top-right a:not(:last-child) {
+        margin-right: 10px;
+    }
+    .contact .contact-mid h3 {
+        font-size: 2rem;
+    }
+    .contact .contact-bot {
+        width: 40%;
+    }
+    .contact .contact-bot p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .contact {
+        height: 500px;
+    }
+    .contact .contact-title {
+        width: 100%;
+        font-size: 4.5rem;
+    }
+    .contact .contact-top {
+        justify-content: flex-start;
+    }
+    .contact .contact-top a {
+        font-size: 1rem;
+    }
+    .contact .contact-top-left a {
+        margin-right: 15px;
+    }
+    .contact .contact-top-left a:not(:first-child) {
+        margin-left: 0;
+    }
+    .contact .contact-top-right a:not(:last-child) {
+        margin-right: 15px;
+    }
+    .contact .contact-mid {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+    }
+    .contact .contact-mid h3 {
+        font-size: 1.8rem;
+    }
+    .contact .contact-mid h3:last-child {
+        margin-top: 5px;
+    }
+    .contact .contact-bot {
+        width: 50%;
+    }
+    .contact .contact-bot p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact {
+        padding: 0;
+        height: 400px;
+    }
+    .contact .contact-title {
+        font-size: 4rem;
+    }
+    .contact .contact-top a {
+        color: #000;
+        font-size: .9rem;
+    }
+    .contact .contact-top-left a {
+        margin-right: 10px;
+    }
+    .contact .contact-top-right a:not(:last-child) {
+        margin-right: 10px;
+    }
+    .contact .contact-mid h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact {
+        height: 350px;
+    }
+    .contact .contact-title {
+        font-size: 3.5rem;
+        transform: translateX(-50%) translateY(10%);
+    }
+    .contact .contact-top a {
+        color: #000;
+        font-size: .8rem;
+    }
+    .contact .contact-top-left a {
+        margin-right: 7px;
+    }
+    .contact .contact-top-right a:not(:last-child) {
+        margin-right: 7px;
+    }
+    .contact .contact-bot {
+        width: 70%;
+    }
+    .contact .contact-bot p {
+        font-size: .8rem;
+    }
+}

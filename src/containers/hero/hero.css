@@ -1,0 +1,184 @@
+.hero {
+    width: 100%;
+    max-height: 1100px;
+    height: 1000px;
+    padding: 50px 0;
+    /* border: 1px red solid; */
+}
+
+.hero .container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero-top {
+    z-index: 10;
+}
+
+.hero .hero-top h1 {
+    color: #000;
+    font-size: 9rem;
+    font-weight: 700;
+    text-transform: initial;
+    text-align: center;
+    line-height: .7;
+    margin-bottom: -25px;
+    letter-spacing: -6px;
+}
+
+.hero .hero-top h1 span {
+    display: block;
+    color: rgba(0,0,0,0.4);
+    font-size: 7rem;
+    margin-top: 20px;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+}
+
+.hero .hero-mid {
+    max-width: 625px;
+    max-height: 400px;
+}
+
+.hero .hero-bot h2 {
+    color: #000;
+    font-size: 9rem;
+    font-weight: 700;
+    text-transform: initial;
+    text-align: center;
+    line-height: .7;
+    margin-top: -25px;
+    letter-spacing: -6px;
+}
+
+.hero .hero-bot h2 span:first-child {
+    display: block;
+    color: rgba(0,0,0,0.4);
+    font-size: 7rem;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+}
+
+@media (max-width: 1440px) {
+    .hero .hero-top h1 {
+        font-size: 8rem;
+    }
+    .hero .hero-top h1 span {
+        font-size: 6.5rem;
+    }
+    .hero .hero-bot h2 {
+        font-size: 8rem;
+    }
+    .hero .hero-bot h2 span:first-child {
+        font-size: 6.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        height: 800px;
+        padding: 50px 0;
+    }
+    .hero .hero-top h1 {
+        font-size: 6.5rem;
+    }
+    .hero .hero-top h1 span {
+        font-size: 5rem;
+    }
+    .hero .hero-bot h2 {
+        font-size: 6rem;
+    }
+    .hero .hero-bot h2 span:first-child {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 550px;
+        padding: 0;
+    }
+    .hero .hero-top h1 {
+        font-size: 5rem;
+        margin-bottom: -15px;
+    }
+    .hero .hero-top h1 span {
+        font-size: 3.5rem;
+        margin-top: 10px;
+    }
+    .hero .hero-mid {
+        max-width: 475px;
+        max-height: 250px;
+    }
+    .hero .hero-bot h2 {
+        font-size: 4.5rem;
+        margin-top: -15px;
+    }
+    .hero .hero-bot h2 span:first-child {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        height: 700px;
+        padding: 130px 0 0;
+    }
+    .hero .hero-top h1 {
+        font-size: 5rem;
+        margin-bottom: -15px;
+    }
+    .hero .hero-top h1 span {
+        font-size: 3.5rem;
+        margin-top: 10px;
+    }
+    .hero .hero-mid {
+        max-width: 425px;
+        max-height: 200px;
+    }
+    .hero .hero-bot h2 {
+        font-size: 4.5rem;
+        margin-top: -15px;
+    }
+    .hero .hero-bot h2 span:first-child {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero {
+        height: 650px;
+        padding: 100px 0 0;
+    }
+    .hero .container {
+        justify-content: space-around;
+    }
+    .hero .hero-top h1 {
+        font-size: 4rem;
+        line-height: .8;
+    }
+    .hero .hero-top h1 span {
+        font-size: 2.5rem;
+        margin-top: 5px;
+    }
+    .hero .hero-mid {
+        max-width: 405px;
+        max-height: 180px;
+    }
+    .hero .hero-bot h2 {
+        font-size: 4rem;
+        line-height: .8;
+    }
+    .hero .hero-bot h2 span:first-child {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+}

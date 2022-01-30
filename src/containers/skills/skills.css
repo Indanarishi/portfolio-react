@@ -1,0 +1,115 @@
+.skills {
+    width: 100%;
+    max-height: 600px;
+    height: 600px;
+    margin: 50px 0;
+}
+
+.skills .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+}
+
+.skills .container h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-15px);
+    font-size: 10rem;
+    text-transform: lowercase;
+    color: rgba(0,0,0,0.4);
+}
+
+.skills .skills-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skills-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.skills .skills-item p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .skills {
+        height: 500px;
+    }
+    .skills .container h2 {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        margin-bottom: 150px;
+    }
+    .skills .container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .skills .container h2 {
+        font-size: 5rem;
+    }
+    .skills .skills-item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 430px) {
+    .skills {
+        margin-top: 25px;
+        margin-bottom: 175px;
+    }
+    .skills .container h2 {
+        font-size: 4.5rem;
+        transform: translateX(-50%) translateY(0);
+    }
+    .skills .skills-item img {
+        width: 60px;
+        height: 60px;
+    }
+    .skills .skills-item p {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 375px) {
+    .skills {
+        height: 400px;
+        margin-top: 25px;
+        margin-bottom: 150px;
+    }
+    .skills .container h2 {
+        font-size: 4rem;
+        transform: translateX(-50%) translateY(0);
+    }
+    .skills .skills-item img {
+        width: 50px;
+        height: 50px;
+    }
+    .skills .skills-item p {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 320px) {
+    .skills {
+        margin-top: 0;
+    }
+}
