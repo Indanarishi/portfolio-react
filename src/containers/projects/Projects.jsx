@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 
 // styles
 import './projects.css'
@@ -7,46 +8,98 @@ const Projects = () => {
         <section id="projects" className="projects">
             <div className="container">
                 <div className="project-item">
-                    <div className="project-item-left">
+                    <motion.div 
+                        className="project-item-left"
+                        initial={{ opacity: 0, y: 100 }}
+                        transition={{ duration: 2.5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                    >
                         <img src="images/works-1.png" alt="gpt-3" />
-                    </div>
+                    </motion.div>
                     <div className="project-item-right">
-                        <h2 className="project-title">Projects</h2>
-                        <h3 className="project-item-title">
+                        <motion.h2 
+                            className="project-title"
+                            initial={{ opacity: 0, top: 100 }}
+                            transition={{ duration: 1.5 }}
+                            whileInView={{ opacity: 1, top: -25 }}
+                        >
+                            Projects
+                        </motion.h2>
+                        <motion.h3 
+                            className="project-item-title"
+                            initial={{ opacity: 0, y: 100 }}
+                            transition={{ duration: 2.5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                        >
                             GPT-3 AI React Website with Framer Motion
-                        </h3>
-                        <div className="project-item-btns">
-                            <a href="#" className="btn github-btn">View GitHub</a>
-                            <a href="#" className="btn demo-btn">View Live Demo</a>
-                        </div>
+                        </motion.h3>
+                        <motion.div 
+                            className="project-item-btns"
+                            initial={{ opacity: 0, y: 100 }}
+                            transition={{ duration: 2.5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                        >
+                            <a href="/#" className="btn github-btn">View GitHub</a>
+                            <a href="/#" className="btn demo-btn">View Live Demo</a>
+                        </motion.div>
                     </div>
                 </div>
                 <div className="project-item">
-                    <div className="project-item-left">
+                    <motion.div 
+                        className="project-item-left"
+                        initial={{ opacity: 0, y: 100 }}
+                        transition={{ duration: 2.5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                    >
                         <img src="images/works-2.png" alt="social" />
-                    </div>
+                    </motion.div>
                     <div className="project-item-right">
-                        <h3 className="project-item-title">
+                        <motion.h3 
+                            className="project-item-title"
+                            initial={{ opacity: 0, y: 100 }}
+                            transition={{ duration: 2.5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                        >
                             "SOCIAL" Social Media React Website with Sanity.io
-                        </h3>
-                        <div className="project-item-btns">
-                            <a href="#" className="btn github-btn">View GitHub</a>
-                            <a href="#" className="btn demo-btn">View Live Demo</a>
-                        </div>
+                        </motion.h3>
+                        <motion.div 
+                            className="project-item-btns"
+                            initial={{ opacity: 0, y: 100 }}
+                            transition={{ duration: 2.5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                        >
+                            <a href="/#" className="btn github-btn">View GitHub</a>
+                            <a href="/#" className="btn demo-btn">View Live Demo</a>
+                        </motion.div>
                     </div>
                 </div>
                 <div className="project-item">
-                    <div className="project-item-left">
+                    <motion.div 
+                        className="project-item-left"
+                        initial={{ opacity: 0, y: 100 }}
+                        transition={{ duration: 2.5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                    >
                         <img src="images/works-3.png" alt="portfolio" />
-                    </div>
+                    </motion.div>
                     <div className="project-item-right">
-                        <h3 className="project-item-title">
+                        <motion.h3 
+                            className="project-item-title"
+                            initial={{ opacity: 0, y: 100 }}
+                            transition={{ duration: 2.5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                        >
                             Indana Portfolio Website with Bootstrap 5, SASS and Animated On Scroll JS Library
-                        </h3>
-                        <div className="project-item-btns">
-                            <a href="#" className="btn github-btn">View GitHub</a>
-                            <a href="#" className="btn demo-btn">View Live Demo</a>
-                        </div>
+                        </motion.h3>
+                        <motion.div 
+                            className="project-item-btns"
+                            initial={{ opacity: 0, y: 100 }}
+                            transition={{ duration: 2.5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                        >
+                            <a href="/#" className="btn github-btn">View GitHub</a>
+                            <a href="/#" className="btn demo-btn">View Live Demo</a>
+                        </motion.div>
                     </div>
                 </div>
             </div>

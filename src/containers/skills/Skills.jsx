@@ -1,36 +1,53 @@
+import { motion } from 'framer-motion';
 
 // styles
 import './skills.css'
+
+// components
+import Skill from '../../components/skill/Skill';
+
+const skillData = [
+    {
+        image: 'html',
+        title: 'HTML'
+    },
+    {
+        image: 'css',
+        title: 'CSS'
+    },
+    {
+        image: 'sass',
+        title: 'SASS'
+    },
+    {
+        image: 'bootstrap',
+        title: 'Bootstrap'
+    },
+    {
+        image: 'javascript',
+        title: 'Javascript'
+    },
+    {
+        image: 'react',
+        title: 'React'
+    }
+]
 
 const Skills = () => {
     return (
         <section id="skills" className="skills">
             <div className="container">
-                <h2 className="skills-title">Skills</h2>
-                <div className="skills-item">
-                    <img src="/images/html-icons.svg" alt="html" />
-                    <p>HTML</p>
-                </div>
-                <div className="skills-item">
-                    <img src="/images/css-icons.svg" alt="css" />
-                    <p>CSS</p>
-                </div>
-                <div className="skills-item">
-                    <img src="/images/sass-icons.svg" alt="sass" />
-                    <p>SASS</p>
-                </div>
-                <div className="skills-item">
-                    <img src="/images/bootstrap-icons.svg" alt="bootstrap" />
-                    <p>Bootstrap</p>
-                </div>
-                <div className="skills-item">
-                    <img src="/images/javascript-icons.svg" alt="javascript" />
-                    <p>Javascript</p>
-                </div>
-                <div className="skills-item">
-                    <img src="/images/react-icons.svg" alt="react" />
-                    <p>React</p>
-                </div>
+                <motion.h2 
+                    className="skills-title"
+                    initial={{ opacity: 0, top: 100 }}
+                    transition={{ duration: 2 }}
+                    whileInView={{ opacity: 1, top: -25 }}
+                >
+                    Skills
+                </motion.h2>
+                {skillData.map((skill, index) => (
+                    <Skill key={index} skill={skill} index={index} />
+                ))}
             </div>
         </section>
     )
