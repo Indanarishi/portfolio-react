@@ -39,8 +39,8 @@ const Projects = () => {
                             transition={{ duration: 2.5 }}
                             whileInView={{ opacity: 1, y: 0 }}
                         >
-                            <a href="/#" className="btn github-btn">View GitHub</a>
-                            <a href="/#" className="btn demo-btn">View Live Demo</a>
+                            <a href="https://github.com/Indanarishi/gpt-open-ai-react" target="_blank" rel="noreferrer" className="btn github-btn">View GitHub</a>
+                            <a href="https://gpt3-app-indana.netlify.app/" target="_blank" rel="noreferrer" className="btn demo-btn">View Live Demo</a>
                         </motion.div>
                     </div>
                 </div>
@@ -68,8 +68,8 @@ const Projects = () => {
                             transition={{ duration: 2.5 }}
                             whileInView={{ opacity: 1, y: 0 }}
                         >
-                            <a href="/#" className="btn github-btn">View GitHub</a>
-                            <a href="/#" className="btn demo-btn">View Live Demo</a>
+                            <a href="https://github.com/Indanarishi/react-social-media-sanity/tree/master/social_frontend" target="_blank" rel="noreferrer" className="btn github-btn">View GitHub</a>
+                            <a href="https://react-social-sanity-indana.netlify.app/login" target="_blank" rel="noreferrer" className="btn demo-btn">View Live Demo</a>
                         </motion.div>
                     </div>
                 </div>
@@ -97,8 +97,8 @@ const Projects = () => {
                             transition={{ duration: 2.5 }}
                             whileInView={{ opacity: 1, y: 0 }}
                         >
-                            <a href="/#" className="btn github-btn">View GitHub</a>
-                            <a href="/#" className="btn demo-btn">View Live Demo</a>
+                            <a href="https://github.com/Indanarishi/portfolio-bootstrap5-sass" target="_blank" rel="noreferrer" className="btn github-btn">View GitHub</a>
+                            <a href="https://bootstrap-sass-indana.netlify.app/" target="_blank" rel="noreferrer" className="btn demo-btn">View Live Demo</a>
                         </motion.div>
                     </div>
                 </div>
