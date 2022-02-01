@@ -79,6 +79,7 @@
 @media (max-width: 430px) {
     .about {
         height: 350px;
+        padding-top: 130px;
     }
     .about .about-left h2 {
         font-size: 4.5rem;

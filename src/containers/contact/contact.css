@@ -175,6 +175,7 @@
 @media (max-width: 375px) {
     .contact {
         padding: 0;
+        padding-top: 130px;
         height: 400px;
     }
     .contact .contact-title {
