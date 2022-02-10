@@ -53,6 +53,7 @@ const Navbar = () => {
                             <motion.a variants={item} href="#about" className="navbar-item">About</motion.a>
                             <motion.a variants={item} href="#skills" className="navbar-item">Skills</motion.a>
                             <motion.a variants={item} href="#projects" className="navbar-item">Projects</motion.a>
+                            <motion.a variants={item} href="https://indanarishi.wordpress.com/" target="_blank" rel="noreferrer">Blog</motion.a>
                             <motion.a variants={item} href="#contact" className="navbar-item">Contact Me</motion.a>
                         </motion.li>
                     </ul>
